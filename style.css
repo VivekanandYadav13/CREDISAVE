@@ -1,0 +1,155 @@
+/* Reset default margins, padding, and enable box model control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.zero{
+    justify-content: center;
+    position: relative;
+    color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.links{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color:lightgray;
+    color: black;
+    text-decoration-color: none; 
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1:1);
+     box-shadow: 0 5px 15px 7px rgba(95, 158, 160, 0.7);
+}
+
+
+/* Overall page settings */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:bisque;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: cadetblue;
+}
+
+/* Navigation links */
+nav a {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+/* Form container */
+form {
+    max-width: 350px;
+    margin: auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    color:cadetblue;
+}
+form:hover{
+    transform: scale(1:1);
+     box-shadow: 0 5px 15px 7px rgba(95, 158, 160, 0.7);
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+/* Input fields inside the form */
+form input {
+    margin: 8px 0 16px;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border-radius: 6px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background:whitesmoke;
+    color:cadetblue;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background: whitesmoke;
+    box-shadow: 0 5px 15px 7px rgba(95, 158, 160, 0.7);
+    transform: translateY(-2px); 
+}
+
+
+/* Error message styling */
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0 ;
+}
+
+.dash{
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 100vh;               
+    background-color: bisque;    
+}
+
+.dash h1 {
+    color: cadetblue;            
+    font-size: 5rem;             
+    text-align: center;          
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    animation: glowBlink 1.5s infinite alternate;
+}
+@keyframes glowBlink {
+     0% {
+        text-shadow: 0 0 1px cadetblue,
+                     0 0 2px cadetblue;
+    }
+    50% {
+        text-shadow: 0 0 3px cadetblue,
+                     0 0 5px cadetblue;
+    }
+    100% {
+        text-shadow: 0 0 1px cadetblue,
+                     0 0 2px cadetblue;
+    }
+}
+
+  
